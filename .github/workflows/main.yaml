@@ -6,10 +6,10 @@ jobs:
     steps:
       - name: Has changed action step
         id: changed
-        uses: enahsor/has-changed@v1.1.0.13
+        uses: enahsor/has-changed@v1.1.0.14
         with:
           services-root: ""
           token: ${{secrets.GITHUB_TOKEN}}
 
-      - name: Get the output time
-        run: echo "The time was ${{steps.changed.outputs.time}}"
+      - name: Get the affected services
+        run: echo "The time was ${{steps.changed.outputs.affected-services}}"
