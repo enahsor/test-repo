@@ -1,0 +1,14 @@
+on: [push]
+jobs:
+  has_changed_job:
+    runs-on: ubuntu-latest
+    name: A job to check for changes
+    steps:
+      - name: Has changed action step
+        id: changed
+        uses: enahsor/has-@v1.1
+        with:
+          services: "./"
+
+      - name: Get the output time
+        run: echo "The time was ${{steps.changed.outputs.time}}"
