@@ -8,7 +8,7 @@ jobs:
         id: changed
         uses: enahsor/has-changed@v1.1.0.11
         with:
-          services: "./"
+          services-root: ""
           token: ${{secrets.GITHUB_TOKEN}}
 
       - name: Get the output time
