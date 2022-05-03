@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Has changed action step
         id: changed
-        uses: enahsor/has-changed@v1.1
+        uses: enahsor/has-changed@v1
         with:
           services: "./"
 
