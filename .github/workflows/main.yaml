@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Has changed action step
         id: changed
-        uses: enahsor/has-changed@v1.1.0.3
+        uses: enahsor/has-changed@v1.1.0.4
         with:
           services: "./"
           token: ${{secrets.GITHUB_TOKEN}}
